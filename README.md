@@ -5,7 +5,7 @@
 ```text
 cryptography
 PyJWT>=1.7.1
-flask-restplus
+Flask
 ```
 
 ## 1. Bootstrap flask app and restplus api
