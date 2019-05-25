@@ -1,11 +1,15 @@
 # Oauth2 library for python flask and restplus
 
+With this simple library, you can authenticate clients coming from a browser (Implicit Flow) or using Bearer token (Credential flow).
+You can manage authorization using rbac function as described here after.
+
 ## Requirements
 
 ```text
 cryptography
 PyJWT>=1.7.1
 Flask
+simple_auth2
 ```
 
 ## 1. Bootstrap flask app and restplus api
@@ -31,14 +35,14 @@ api.init_app(app)
 oauth_config = {
     'well_known_url': '{well_known_url}',
     'client_id': '{client_id}',
-    'redirect_uri': 'http://127.0.0.1:5000/signin-oidc',
+    'redirect_uri': 'https://{host:port}/signin-oidc',
     'audience': '{audience}',
     'scopes': '{coma separeted scopes}',
     'whitelist': ['/openbar?']
 }
 ```
 
-*whitelist field declares your open application endpoints
+> whitelist field declares your open application endpoints
 
 ### security/rbac.py
 
@@ -48,7 +52,7 @@ def rbac(client, operation):
     return True
 ```
 
-*return True to allow access and False to refuse.
+> return True to allow access or False to refuse.
 
 ### security/auth.py
 
