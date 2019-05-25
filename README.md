@@ -109,11 +109,16 @@ if __name__ == "__main__":
 
 Register [here](https://test.pypi.org/account/register/ )
 
-Package like this:
+Install required packages
 
 ```bash
 python -m pip install --user --upgrade setuptools wheel
 python -m pip install --user --upgrade twine
+```
+
+Package like this:
+
+```bash
 python setup.py sdist bdist_wheel
 python -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
 ```

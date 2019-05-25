@@ -20,7 +20,8 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     install_requires=[
-        'Flask',
+        'cryptography',
         'PyJWT>=1.7.1'
+        'Flask'
     ]
 )
