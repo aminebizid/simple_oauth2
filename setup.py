@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="simple_oauth2",
-    version="1.0.0",
+    version="1.0.1",
     author="Amine BIZID",
     author_email="amine.bizid@gmail.com",
     description="A simple OAUTH2 client",
