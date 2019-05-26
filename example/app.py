@@ -1,22 +1,3 @@
-# Oauth2 library for python flask and restplus
-
-With this simple library, you can authenticate clients coming from a browser (Implicit Flow) or using Bearer token (Credential flow).
-You can manage authorization using rbac function as described here after.
-
-## Requirements
-
-Install these requirements
-
-```text
-cryptography
-PyJWT==1.7.1
-flask-restplus
-simple-oauth2
-```
-
-## Usage example
-
-```python
 import os
 from flask import Flask
 from flask_restplus import Api, Resource
@@ -70,29 +51,3 @@ class Toto(Resource):
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
-
-```
-
-## Contributors
-
-Register [here](https://test.pypi.org/account/register/ )
-
-Install required packages
-
-```bash
-python -m pip install --user --upgrade setuptools wheel
-python -m pip install --user --upgrade twine
-```
-
-Package like this:
-
-```bash
-python setup.py sdist bdist_wheel
-python -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
-```
-
-Test install
-
-```bash
-pip install -i https://test.pypi.org/simple/ simple-oauth2
-```

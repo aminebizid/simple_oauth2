@@ -1,0 +1,4 @@
+cryptography
+PyJWT==1.7.1
+flask-restplus
+simple-oauth2

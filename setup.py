@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="simple_oauth2",
-    version="1.0.2",
+    version="1.0.4",
     author="Amine BIZID",
     author_email="amine.bizid@gmail.com",
     description="A simple Outh2 client",
@@ -22,7 +22,7 @@ setuptools.setup(
     ],
     install_requires=[
         'cryptography',
-        'PyJWT>=1.7.1'
+        'PyJWT>=1.7.1',
         'Flask'
     ]
 )
