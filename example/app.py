@@ -14,7 +14,7 @@ oauth_config = {
     'client_id': '{client_id}',
     'redirect_uri': '{host:port}/signin-oidc',
     'audience': '{audience}',
-    'scopes': '{coma separated scopes}',
+    'scopes': '{space separated scopes}',
     'whitelist': ['/openbar?']
 }
 
